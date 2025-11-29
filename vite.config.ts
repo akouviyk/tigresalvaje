@@ -8,6 +8,7 @@ export default defineConfig(({ command }) => {
   return {
     plugins: [react()],
     base,
+    assetsInclude: ['**/*.JPG', '**/*.JPEG'],
     resolve: {
       alias: {
         '@': path.resolve(__dirname, './src'),

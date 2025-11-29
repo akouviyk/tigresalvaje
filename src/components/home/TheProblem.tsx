@@ -1,6 +1,6 @@
 export default function TheProblem() {
   return (
-    <section className="bg-sandstone py-20">
+    <section style={{ backgroundColor: '#d4e8cf' }} className="py-20">
       <div className="section-container">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-serif text-center mb-12">

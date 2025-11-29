@@ -5,13 +5,7 @@ export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav
-      className="text-white sticky top-0 z-50 shadow-lg"
-      style={{
-        backgroundImage:
-          'linear-gradient(to bottom, rgba(10, 44, 58, 0.9), rgba(10, 44, 58, 0.5))',
-      }}
-    >
+    <nav className="sticky top-0 z-50 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
@@ -32,10 +26,19 @@ export default function Navigation() {
               <button className="hover:text-hatchling-olive transition-colors">
                 Our Work
               </button>
-              <div className="absolute left-0 mt-2 w-56 bg-white text-deep-marine rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+              <div
+                className="absolute left-0 mt-2 w-56 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all"
+                style={{ backgroundColor: '#fffaf1', color: '#24582a' }}
+              >
                 <Link
                   to="/conservation/sea-turtles"
-                  className="block px-4 py-3 hover:bg-sandstone transition-colors"
+                  className="block px-4 py-3 transition-colors"
+                  onMouseEnter={(e) =>
+                    (e.currentTarget.style.backgroundColor = '#d4e8cf')
+                  }
+                  onMouseLeave={(e) =>
+                    (e.currentTarget.style.backgroundColor = 'transparent')
+                  }
                 >
                   Sea Turtle Conservation
                 </Link>
@@ -67,16 +70,31 @@ export default function Navigation() {
               <button className="hover:text-hatchling-olive transition-colors">
                 Get Involved
               </button>
-              <div className="absolute left-0 mt-2 w-48 bg-white text-deep-marine rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+              <div
+                className="absolute left-0 mt-2 w-48 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all"
+                style={{ backgroundColor: '#fffaf1', color: '#24582a' }}
+              >
                 <Link
                   to="/donate"
-                  className="block px-4 py-3 hover:bg-sandstone transition-colors font-semibold"
+                  className="block px-4 py-3 transition-colors font-semibold"
+                  onMouseEnter={(e) =>
+                    (e.currentTarget.style.backgroundColor = '#d4e8cf')
+                  }
+                  onMouseLeave={(e) =>
+                    (e.currentTarget.style.backgroundColor = 'transparent')
+                  }
                 >
                   Donate
                 </Link>
                 <Link
                   to="/volunteer"
-                  className="block px-4 py-3 hover:bg-sandstone transition-colors"
+                  className="block px-4 py-3 transition-colors"
+                  onMouseEnter={(e) =>
+                    (e.currentTarget.style.backgroundColor = '#d4e8cf')
+                  }
+                  onMouseLeave={(e) =>
+                    (e.currentTarget.style.backgroundColor = 'transparent')
+                  }
                 >
                   Volunteer
                 </Link>
@@ -85,7 +103,16 @@ export default function Navigation() {
 
             <Link
               to="/donate"
-              className="bg-sunset-coral px-6 py-2 rounded-md font-semibold hover:bg-hatchling-olive transition-colors"
+              className="px-6 py-2 rounded-md font-semibold transition-colors"
+              style={{ backgroundColor: '#24582a', color: '#c9e631' }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = '#d4e8cf';
+                e.currentTarget.style.color = '#24582a';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = '#24582a';
+                e.currentTarget.style.color = '#c9e631';
+              }}
             >
               Donate
             </Link>
@@ -94,7 +121,13 @@ export default function Navigation() {
           {/* Mobile menu button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden inline-flex items-center justify-center p-2 rounded-md hover:bg-coastal-sage transition-colors"
+            className="md:hidden inline-flex items-center justify-center p-2 rounded-md transition-colors"
+            onMouseEnter={(e) =>
+              (e.currentTarget.style.backgroundColor = '#d4e8cf')
+            }
+            onMouseLeave={(e) =>
+              (e.currentTarget.style.backgroundColor = 'transparent')
+            }
           >
             <svg
               className="h-6 w-6"

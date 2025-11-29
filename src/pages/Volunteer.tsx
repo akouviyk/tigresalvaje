@@ -35,7 +35,7 @@ export default function Volunteer() {
       </Helmet>
 
       {/* Hero */}
-      <section className="relative h-96 bg-deep-marine">
+      <section className="relative h-96" style={{ backgroundColor: '#24582a' }}>
         <div
           className="absolute inset-0 bg-cover bg-center opacity-30"
           style={{
@@ -44,7 +44,7 @@ export default function Volunteer() {
           }}
         />
         <div className="relative z-10 h-full flex flex-col justify-center items-center text-center px-4">
-          <h1 className="text-4xl md:text-6xl font-serif text-white mb-4">
+          <h1 className="text-4xl md:text-6xl font-serif text-coastal-sage mb-4">
             Walk Where David Walked
           </h1>
           <p className="text-xl text-sandstone max-w-2xl">
@@ -55,12 +55,15 @@ export default function Volunteer() {
       </section>
 
       {/* Reality Check */}
-      <section className="bg-sunset-coral/10 py-12">
+      <section style={{ backgroundColor: '#d4e8cf' }} className="py-12">
         <div className="section-container max-w-4xl">
           <h2 className="text-3xl font-serif text-center text-deep-marine mb-6">
             This is NOT Eco-Tourism
           </h2>
-          <div className="bg-white p-8 rounded-lg">
+          <div
+            style={{ backgroundColor: '#fffaf1' }}
+            className="p-8 rounded-lg"
+          >
             <p className="text-driftwood leading-relaxed mb-6 text-center">
               If you want comfort, guided nature walks, and air conditioning,
               this is not the program for you. If you want to make a tangible
@@ -100,14 +103,17 @@ export default function Volunteer() {
       </section>
 
       {/* Responsibilities */}
-      <section className="bg-white py-20">
+      <section style={{ backgroundColor: '#fffaf1' }} className="py-20">
         <div className="section-container">
           <h2 className="text-4xl font-serif text-center mb-12">
             Your Responsibilities
           </h2>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            <div className="bg-sandstone p-6 rounded-lg">
+            <div
+              style={{ backgroundColor: '#d4e8cf' }}
+              className="p-6 rounded-lg"
+            >
               <div className="text-4xl mb-4">🌙</div>
               <h3 className="text-xl font-serif text-deep-marine mb-3">
                 Nightly Beach Patrols
@@ -119,7 +125,10 @@ export default function Volunteer() {
               </p>
             </div>
 
-            <div className="bg-sandstone p-6 rounded-lg">
+            <div
+              style={{ backgroundColor: '#d4e8cf' }}
+              className="p-6 rounded-lg"
+            >
               <div className="text-4xl mb-4">🥚</div>
               <h3 className="text-xl font-serif text-deep-marine mb-3">
                 Nest Relocation
@@ -159,13 +168,16 @@ export default function Volunteer() {
       </section>
 
       {/* Program Details */}
-      <section className="bg-sandstone py-20">
+      <section style={{ backgroundColor: '#d4e8cf' }} className="py-20">
         <div className="section-container max-w-4xl">
           <h2 className="text-4xl font-serif text-center mb-12">
             Program Details
           </h2>
 
-          <div className="bg-white p-8 rounded-lg space-y-6">
+          <div
+            style={{ backgroundColor: '#fffaf1' }}
+            className="p-8 rounded-lg space-y-6"
+          >
             <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <h3 className="font-semibold text-deep-marine mb-2">
@@ -228,13 +240,16 @@ export default function Volunteer() {
       </section>
 
       {/* The 35-Minute Hike */}
-      <section className="bg-white py-20">
+      <section style={{ backgroundColor: '#fffaf1' }} className="py-20">
         <div className="section-container max-w-4xl">
           <h2 className="text-4xl font-serif text-center mb-12">
             The 35-Minute Hike
           </h2>
 
-          <div className="bg-sandstone p-8 rounded-lg">
+          <div
+            style={{ backgroundColor: '#d4e8cf' }}
+            className="p-8 rounded-lg"
+          >
             <h3 className="text-2xl font-serif text-deep-marine mb-6">
               From Bella Vista to Tigre Salvaje
             </h3>
@@ -293,7 +308,7 @@ export default function Volunteer() {
         className="py-20"
         style={{
           backgroundImage:
-            'linear-gradient(to bottom, rgba(10, 44, 58, 0.5), rgba(10, 44, 58, 0.5))',
+            'linear-gradient(to bottom, rgba(23, 64, 27, 0.5), rgba(23, 64, 27, 0.5))',
         }}
       >
         <div className="section-container max-w-4xl">
@@ -352,7 +367,7 @@ export default function Volunteer() {
       </section>
 
       {/* Testimonials */}
-      <section className="bg-white py-20">
+      <section style={{ backgroundColor: '#fffaf1' }} className="py-20">
         <div className="section-container">
           <h2 className="text-4xl font-serif text-center mb-12">
             Volunteer Testimonials
@@ -391,7 +406,7 @@ export default function Volunteer() {
       </section>
 
       {/* Application Form */}
-      <section className="bg-sandstone py-20">
+      <section style={{ backgroundColor: '#d4e8cf' }} className="py-20">
         <div className="section-container max-w-3xl">
           <h2 className="text-4xl font-serif text-center mb-12">
             Apply to Volunteer
@@ -399,7 +414,8 @@ export default function Volunteer() {
 
           <form
             onSubmit={handleSubmit}
-            className="bg-white p-8 rounded-lg space-y-6"
+            style={{ backgroundColor: '#fffaf1' }}
+            className="p-8 rounded-lg space-y-6"
           >
             <div className="grid md:grid-cols-2 gap-6">
               <div>
@@ -544,7 +560,10 @@ export default function Volunteer() {
               </div>
             </div>
 
-            <div className="bg-sandstone p-6 rounded-lg text-sm text-driftwood">
+            <div
+              style={{ backgroundColor: '#d4e8cf' }}
+              className="p-6 rounded-lg text-sm text-driftwood"
+            >
               <p className="mb-2">
                 By submitting this application, you acknowledge that:
               </p>
@@ -562,7 +581,16 @@ export default function Volunteer() {
 
             <button
               type="submit"
-              className="w-full bg-deep-marine text-white py-4 rounded-md font-bold text-lg hover:bg-coastal-sage transition-colors"
+              className="w-full py-4 rounded-md font-bold text-lg transition-colors"
+              style={{ backgroundColor: '#24582a', color: '#c9e631' }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = '#d4e8cf';
+                e.currentTarget.style.color = '#24582a';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = '#24582a';
+                e.currentTarget.style.color = '#c9e631';
+              }}
             >
               Submit Application
             </button>
@@ -576,7 +604,7 @@ export default function Volunteer() {
       </section>
 
       {/* Download Waiver */}
-      <section className="bg-white py-12">
+      <section style={{ backgroundColor: '#fffaf1' }} className="py-12">
         <div className="section-container text-center">
           <h3 className="text-2xl font-serif text-deep-marine mb-4">
             Review the Volunteer Waiver
@@ -587,13 +615,31 @@ export default function Volunteer() {
           <div className="flex justify-center gap-4">
             <Link
               to="/volunteer-waiver-en.pdf"
-              className="bg-deep-marine text-white px-6 py-3 rounded-md font-semibold hover:bg-coastal-sage transition-colors"
+              className="px-6 py-3 rounded-md font-semibold transition-colors"
+              style={{ backgroundColor: '#24582a', color: '#c9e631' }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = '#d4e8cf';
+                e.currentTarget.style.color = '#24582a';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = '#24582a';
+                e.currentTarget.style.color = '#c9e631';
+              }}
             >
               English Waiver (PDF)
             </Link>
             <Link
               to="/volunteer-waiver-es.pdf"
-              className="bg-coastal-sage text-white px-6 py-3 rounded-md font-semibold hover:bg-deep-marine transition-colors"
+              className="px-6 py-3 rounded-md font-semibold transition-colors"
+              style={{ backgroundColor: '#24582a', color: '#c9e631' }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = '#d4e8cf';
+                e.currentTarget.style.color = '#24582a';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = '#24582a';
+                e.currentTarget.style.color = '#c9e631';
+              }}
             >
               Spanish Waiver (PDF)
             </Link>

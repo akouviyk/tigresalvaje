@@ -41,7 +41,7 @@ export default function Donate() {
       </Helmet>
 
       {/* Hero Section */}
-      <section className="bg-deep-marine py-20">
+      <section style={{ backgroundColor: '#24582a' }} className="py-20">
         <div className="section-container text-center">
           <h1 className="text-4xl md:text-6xl font-serif text-white mb-6">
             Protect a Nest. Save a Generation.
@@ -54,7 +54,7 @@ export default function Donate() {
       </section>
 
       {/* Main Donation Form */}
-      <section className="bg-white py-20">
+      <section style={{ backgroundColor: '#fffaf1' }} className="py-20">
         <div className="section-container max-w-4xl">
           {/* Donation Type Tabs */}
           <div className="flex border-b border-coastal-sage mb-12">
@@ -97,9 +97,23 @@ export default function Donate() {
                       }}
                       className={`p-6 rounded-lg border-2 transition-all ${
                         amount === amt.toString() && !customAmount
-                          ? 'border-deep-marine bg-deep-marine text-white'
-                          : 'border-coastal-sage hover:border-deep-marine'
+                          ? 'text-white'
+                          : 'hover:border-deep-marine'
                       }`}
+                      style={{
+                        borderColor:
+                          amount === amt.toString() && !customAmount
+                            ? '#24582a'
+                            : '#d4e8cf',
+                        backgroundColor:
+                          amount === amt.toString() && !customAmount
+                            ? '#24582a'
+                            : 'transparent',
+                        color:
+                          amount === amt.toString() && !customAmount
+                            ? '#c9e631'
+                            : '#24582a',
+                      }}
                     >
                       <div className="text-2xl font-bold">${amt}</div>
                       <div className="text-sm mt-2">
@@ -197,7 +211,10 @@ export default function Donate() {
               </div>
 
               {/* PayPal Button */}
-              <div className="bg-sandstone p-8 rounded-lg">
+              <div
+                style={{ backgroundColor: '#d4e8cf' }}
+                className="p-8 rounded-lg"
+              >
                 <h3 className="text-xl font-serif text-deep-marine mb-4">
                   Complete Your Donation
                 </h3>
@@ -211,12 +228,37 @@ export default function Donate() {
 
                 <button
                   disabled={!getSelectedAmount() || !donorName || !email}
-                  className="w-full bg-deep-marine text-white py-4 rounded-md font-bold text-lg hover:bg-coastal-sage transition-colors disabled:bg-coastal-sage/50 disabled:cursor-not-allowed"
+                  className="w-full py-4 rounded-md font-bold text-lg transition-colors disabled:cursor-not-allowed"
+                  style={{
+                    backgroundColor:
+                      !getSelectedAmount() || !donorName || !email
+                        ? '#d4e8cf80'
+                        : '#24582a',
+                    color:
+                      !getSelectedAmount() || !donorName || !email
+                        ? '#24582a80'
+                        : '#c9e631',
+                  }}
+                  onMouseEnter={(e) => {
+                    if (getSelectedAmount() && donorName && email) {
+                      e.currentTarget.style.backgroundColor = '#d4e8cf';
+                      e.currentTarget.style.color = '#24582a';
+                    }
+                  }}
+                  onMouseLeave={(e) => {
+                    if (getSelectedAmount() && donorName && email) {
+                      e.currentTarget.style.backgroundColor = '#24582a';
+                      e.currentTarget.style.color = '#c9e631';
+                    }
+                  }}
                 >
                   Complete Donation with PayPal
                 </button>
 
-                <p className="text-xs text-coastal-sage mt-4 text-center">
+                <p
+                  className="text-xs mt-4 text-center"
+                  style={{ color: '#666' }}
+                >
                   🔒 Secure payment processing. We never store your payment
                   information.
                 </p>
@@ -227,7 +269,10 @@ export default function Donate() {
           {/* Monthly Donation */}
           {donationType === 'monthly' && (
             <div className="space-y-8">
-              <div className="bg-hatchling-olive/10 border-l-4 border-hatchling-olive p-6 mb-8">
+              <div
+                className="bg-hatchling-olive/10 border-l-4 p-6 mb-8"
+                style={{ borderColor: '#d4e8cf', backgroundColor: '#d4e8cf33' }}
+              >
                 <h3 className="text-xl font-serif text-deep-marine mb-2">
                   Become a Guardian — Join Our Monthly Donor Community
                 </h3>
@@ -252,9 +297,23 @@ export default function Donate() {
                       }}
                       className={`w-full p-6 rounded-lg border-2 transition-all text-left ${
                         amount === amt.toString() && !customAmount
-                          ? 'border-deep-marine bg-deep-marine text-white'
-                          : 'border-coastal-sage hover:border-deep-marine'
+                          ? ''
+                          : 'hover:border-deep-marine'
                       }`}
+                      style={{
+                        borderColor:
+                          amount === amt.toString() && !customAmount
+                            ? '#24582a'
+                            : '#d4e8cf',
+                        backgroundColor:
+                          amount === amt.toString() && !customAmount
+                            ? '#24582a'
+                            : 'transparent',
+                        color:
+                          amount === amt.toString() && !customAmount
+                            ? '#c9e631'
+                            : '#24582a',
+                      }}
                     >
                       <div className="flex justify-between items-center">
                         <div>
@@ -264,9 +323,15 @@ export default function Donate() {
                         <div
                           className={`text-sm ${
                             amount === amt.toString() && !customAmount
-                              ? 'text-sandstone'
+                              ? ''
                               : 'text-coastal-sage'
                           }`}
+                          style={{
+                            color:
+                              amount === amt.toString() && !customAmount
+                                ? '#d4e8cf'
+                                : '#24582a',
+                          }}
                         >
                           {amt === 5 && 'Monthly photo + newsletter'}
                           {amt === 25 && 'Quarterly impact report'}
@@ -306,7 +371,10 @@ export default function Donate() {
               </div>
 
               {/* Benefits */}
-              <div className="bg-sandstone p-6 rounded-lg">
+              <div
+                style={{ backgroundColor: '#d4e8cf' }}
+                className="p-6 rounded-lg"
+              >
                 <h4 className="font-semibold text-deep-marine mb-3">
                   Membership Benefits:
                 </h4>
@@ -354,7 +422,10 @@ export default function Donate() {
               </div>
 
               {/* PayPal Subscribe Button */}
-              <div className="bg-sandstone p-8 rounded-lg">
+              <div
+                style={{ backgroundColor: '#d4e8cf' }}
+                className="p-8 rounded-lg"
+              >
                 <h3 className="text-xl font-serif text-deep-marine mb-4">
                   Start Your Monthly Gift
                 </h3>
@@ -367,7 +438,29 @@ export default function Donate() {
 
                 <button
                   disabled={!getSelectedAmount() || !donorName || !email}
-                  className="w-full bg-hatchling-olive text-white py-4 rounded-md font-bold text-lg hover:bg-deep-marine transition-colors disabled:bg-coastal-sage/50 disabled:cursor-not-allowed"
+                  className="w-full py-4 rounded-md font-bold text-lg transition-colors disabled:cursor-not-allowed"
+                  style={{
+                    backgroundColor:
+                      !getSelectedAmount() || !donorName || !email
+                        ? '#d4e8cf80'
+                        : '#24582a',
+                    color:
+                      !getSelectedAmount() || !donorName || !email
+                        ? '#24582a80'
+                        : '#c9e631',
+                  }}
+                  onMouseEnter={(e) => {
+                    if (getSelectedAmount() && donorName && email) {
+                      e.currentTarget.style.backgroundColor = '#d4e8cf';
+                      e.currentTarget.style.color = '#24582a';
+                    }
+                  }}
+                  onMouseLeave={(e) => {
+                    if (getSelectedAmount() && donorName && email) {
+                      e.currentTarget.style.backgroundColor = '#24582a';
+                      e.currentTarget.style.color = '#c9e631';
+                    }
+                  }}
                 >
                   Start Monthly Gift with PayPal
                 </button>
@@ -383,9 +476,12 @@ export default function Donate() {
       </section>
 
       {/* Urgency Banner */}
-      <div className="bg-sunset-coral py-4">
+      <div
+        style={{ backgroundColor: '#24582a', color: '#c9e631' }}
+        className="py-4"
+      >
         <div className="section-container">
-          <div className="flex flex-wrap justify-center items-center gap-4 text-white text-center">
+          <div className="flex flex-wrap justify-center items-center gap-4 text-center">
             <span className="font-semibold">⏰ Nesting Season Active:</span>
             <span>July–December</span>
             <span>•</span>
@@ -400,7 +496,7 @@ export default function Donate() {
         className=" py-20"
         style={{
           backgroundImage:
-            'linear-gradient(to bottom, rgba(10, 44, 58, 0.5), rgba(10, 44, 58, 0.5))',
+            'linear-gradient(to bottom, rgba(23, 64, 27, 0.5), rgba(23, 64, 27, 0.5))',
         }}
       >
         <div className="section-container max-w-4xl">
@@ -453,7 +549,10 @@ export default function Donate() {
                 </ul>
               </div>
 
-              <div className="bg-sandstone p-6 rounded-lg">
+              <div
+                style={{ backgroundColor: '#d4e8cf' }}
+                className="p-6 rounded-lg"
+              >
                 <h4 className="font-semibold text-deep-marine mb-4">
                   Already Sponsored This Season:
                 </h4>
@@ -472,7 +571,7 @@ export default function Donate() {
                 <div className="mt-4 bg-white rounded-full h-3 overflow-hidden">
                   <div
                     className="bg-hatchling-olive h-full"
-                    style={{ width: '59%' }}
+                    style={{ width: '59%', backgroundColor: '#d4e8cf' }}
                   ></div>
                 </div>
               </div>
@@ -484,7 +583,16 @@ export default function Donate() {
                 setAmount('50');
                 window.scrollTo({ top: 0, behavior: 'smooth' });
               }}
-              className="w-full bg-hatchling-olive text-white py-4 rounded-md font-bold text-lg hover:bg-deep-marine transition-colors"
+              className="w-full py-4 rounded-md font-bold text-lg transition-colors"
+              style={{ backgroundColor: '#24582a', color: '#c9e631' }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = '#d4e8cf';
+                e.currentTarget.style.color = '#24582a';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = '#24582a';
+                e.currentTarget.style.color = '#c9e631';
+              }}
             >
               Sponsor a Nest — $50
             </button>
@@ -493,7 +601,7 @@ export default function Donate() {
       </section>
 
       {/* FAQ */}
-      <section className="bg-white py-20">
+      <section style={{ backgroundColor: '#fffaf1' }} className="py-20">
         <div className="section-container max-w-4xl">
           <h2 className="text-4xl font-serif text-center mb-12">
             Donation FAQ
@@ -522,7 +630,11 @@ export default function Donate() {
                 a: 'Share our work on social media. Sign up for our newsletter. Every bit of awareness helps. We also need volunteers (you pay $35/day for meals + accommodation; your work is the gift).',
               },
             ].map((faq, index) => (
-              <details key={index} className="bg-sandstone p-6 rounded-lg">
+              <details
+                key={index}
+                style={{ backgroundColor: '#d4e8cf' }}
+                className="p-6 rounded-lg"
+              >
                 <summary className="font-semibold text-deep-marine cursor-pointer">
                   {faq.q}
                 </summary>
@@ -534,20 +646,20 @@ export default function Donate() {
       </section>
 
       {/* Security */}
-      <section className="bg-sandstone py-12">
+      <section style={{ backgroundColor: '#d4e8cf' }} className="py-12">
         <div className="section-container">
           <div className="flex flex-wrap justify-center items-center gap-8 text-sm text-coastal-sage">
             <div className="flex items-center gap-2">
               <span>🔒</span>
-              <span>Secure Payment Processing</span>
+              <span style={{ color: '#666' }}>Secure Payment Processing</span>
             </div>
             <div className="flex items-center gap-2">
               <span>🔒</span>
-              <span>HTTPS Encrypted</span>
+              <span style={{ color: '#666' }}>HTTPS Encrypted</span>
             </div>
             <div className="flex items-center gap-2">
               <span>🔒</span>
-              <span>Privacy Protected</span>
+              <span style={{ color: '#666' }}>Privacy Protected</span>
             </div>
           </div>
         </div>

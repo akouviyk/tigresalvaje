@@ -1,20 +1,19 @@
-import { useState } from 'react';
 import Nesting from '../../assets/Nesting-Green-Sea-Turtles.jpg';
 
 export default function ImpactCounter() {
   // In production, these would come from Firestore
-  const [hatchlings] = useState(15234);
-  const [nests] = useState(127);
-  const [volunteers] = useState(43);
-  const [students] = useState(8);
-  const [progress] = useState(76); // percentage toward 20,000 goal
+  // const [hatchlings] = useState(15234);
+  // const [nests] = useState(127);
+  // const [volunteers] = useState(43);
+  // const [students] = useState(8);
+  // const [progress] = useState(76); // percentage toward 20,000 goal
 
   return (
     <section
       className="py-10"
       style={{
         backgroundImage:
-          'linear-gradient(to bottom, rgba(10, 44, 58, 0.5), rgba(10, 44, 58, 0.5))',
+          'linear-gradient(to bottom, rgba(23, 64, 27, 0.5), rgba(23, 64, 27, 0.5))',
       }}
     >
       {/* <div className="order-1 md:order-2"> */}
@@ -25,8 +24,7 @@ export default function ImpactCounter() {
         className="w-full h-full object-cover"
       />
       {/* </div> */}
-      {/* </div> */}
-      <div className="section-container">
+      {/* <div className="section-container">
         <h2 className="text-4xl md:text-5xl font-serif text-center text-white mb-12">
           2024 Season Impact
         </h2>
@@ -63,7 +61,6 @@ export default function ImpactCounter() {
           </div>
         </div>
 
-        {/* Progress Bar */}
         <div className="max-w-3xl mx-auto">
           <div className="flex justify-between text-white mb-2">
             <span>Progress toward 20,000 hatchlings</span>
@@ -85,12 +82,21 @@ export default function ImpactCounter() {
         <div className="text-center mt-12">
           <a
             href="/donate"
-            className="inline-block bg-sunset-coral text-white px-8 py-4 rounded-md font-bold text-lg hover:bg-hatchling-olive transition-colors"
+            className="inline-block px-8 py-4 rounded-md font-bold text-lg transition-colors"
+            style={{ backgroundColor: '#24582a', color: '#c9e631' }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.backgroundColor = '#d4e8cf';
+              e.currentTarget.style.color = '#24582a';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.backgroundColor = '#24582a';
+              e.currentTarget.style.color = '#c9e631';
+            }}
           >
             Help us reach our goal →
           </a>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }

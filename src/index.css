@@ -4,34 +4,49 @@
 
 @layer base {
   :root {
-    --deep-marine: #0a2c3a;
-    --sandstone: #f3efe5;
-    --coastal-sage: #7a8f86;
-    --driftwood: #7d5a4c;
-    --hatchling-olive: #a3b18a;
-    --sunset-coral: #d78c6c;
+    --deep-marine: #24582a;
+    --sandstone: #fffaf1;
+    --coastal-sage: #d4e8cf;
+    --driftwood: #24582a;
+    --hatchling-olive: #d4e8cf;
+    --sunset-coral: #c9e631;
+
+    /* Theme colors */
+    --bg-primary: #fffaf1;
+    --bg-secondary: #d4e8cf;
+    --text-primary: #24582a;
+    --button-bg: #24582a;
+    --button-text: #c9e631;
+    --text-muted: #666666;
   }
 
   body {
-    @apply font-sans text-driftwood bg-sandstone;
+    @apply font-sans text-text-primary bg-bg-primary;
+    font-size: 16px;
+    line-height: 1.5;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-serif text-deep-marine;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif text-text-primary;
   }
 }
 
 @layer components {
   .btn-primary {
-    @apply bg-deep-marine text-white px-8 py-4 rounded-md font-semibold text-lg hover:bg-coastal-sage transition-colors shadow-lg;
+    @apply bg-button-bg text-button-text px-8 py-4 rounded-md font-semibold text-lg hover:bg-bg-secondary hover:text-text-primary transition-colors shadow-lg;
   }
 
   .btn-secondary {
-    @apply bg-transparent border-2 border-deep-marine text-deep-marine px-6 py-3 rounded-md font-medium hover:bg-sandstone transition-colors;
+    @apply bg-transparent border-2 border-text-primary text-text-primary px-6 py-3 rounded-md font-medium hover:bg-bg-secondary transition-colors;
   }
 
   .btn-cta {
-    @apply bg-sunset-coral text-white px-8 py-4 rounded-md font-bold text-lg hover:bg-hatchling-olive transition-all hover:scale-105 shadow-lg;
+    @apply bg-button-bg text-button-text px-8 py-4 rounded-md font-bold text-lg hover:bg-bg-secondary hover:text-text-primary transition-all hover:scale-105 shadow-lg;
   }
 
   .card {

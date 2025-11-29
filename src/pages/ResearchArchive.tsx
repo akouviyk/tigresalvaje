@@ -1,4 +1,10 @@
 import { Helmet } from 'react-helmet-async';
+import tigresalvajeconservation from '../assets/tigresalvajeconservation.webp';
+import tigresalvajeconservationlocation from '../assets/tigresalvajeconservationlocation.JPG';
+import tigresalvajedonationexpo from '../assets/tigresalvajedonationexpo.JPG';
+import tigresalvajevisualimpact from '../assets/tigresalvajevisualimpact.JPG';
+import tigresalvajevisualimpacteggs from '../assets/tigresalvajevisualimpacteggs.JPG';
+import turtleEggs from '../assets/turtle-eggs.jpg';
 
 export default function ResearchArchive() {
   return (
@@ -17,15 +23,17 @@ export default function ResearchArchive() {
       <section
         className="py-20"
         style={{
-          backgroundImage:
-            'linear-gradient(to bottom, rgba(10, 44, 58, 0.5), rgba(10, 44, 58, 0.5))',
+          backgroundColor: '#d4e8cf',
         }}
       >
         <div className="section-container">
-          <h1 className="text-4xl md:text-6xl font-serif text-center text-white mb-6">
+          <h1
+            className="text-4xl md:text-6xl font-serif text-center text-muted mb-6"
+            style={{ color: '#666' }}
+          >
             Research Archive
           </h1>
-          <p className="text-xl text-sandstone text-center max-w-4xl mx-auto">
+          <p className="text-xl text-primary text-center max-w-4xl mx-auto">
             15+ Years of Field Data. We have scanned David Teichmann's field
             logs documenting every nest, hatchling, and observed threat at Punta
             Burica from 2005–2021. This dataset is available for researchers,
@@ -143,54 +151,64 @@ export default function ResearchArchive() {
         </div>
       </section>
 
-      {/* Notebook Archive */}
+      {/* Visual Archive */}
       <section className="bg-white py-20">
         <div className="section-container">
           <h2 className="text-3xl font-serif text-center mb-12">
-            David's Field Notebooks
+            Visual Archive
           </h2>
-
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {[
               {
                 years: '2005–2007',
                 pages: 138,
-                notes: 'Early years, baseline documentation',
+                notes: 'Coastal ecosystem biodiversity documented',
+                image: tigresalvajeconservation,
               },
               {
                 years: '2008–2010',
                 pages: 215,
-                notes: 'Incubator protocols refined',
+                notes: 'Beach habitat monitoring at Punta Burica',
+                image: tigresalvajeconservationlocation,
               },
-              { years: '2011–2013', pages: 198, notes: 'Record year (2011)' },
+              {
+                years: '2011–2013',
+                pages: 198,
+                notes: 'Community education & hatchling releases',
+                image: tigresalvajedonationexpo,
+              },
               {
                 years: '2014–2016',
                 pages: 176,
-                notes: 'Poaching crisis intensifies',
+                notes: 'Incubator infrastructure development',
+                image: tigresalvajevisualimpact,
               },
               {
                 years: '2017–2019',
                 pages: 189,
-                notes: 'Habitat loss documented',
+                notes: 'Nest excavation & egg documentation',
+                image: tigresalvajevisualimpacteggs,
               },
               {
                 years: '2020–2021',
                 pages: 142,
-                notes: "David's final seasons",
+                notes: 'Final field seasons & legacy data',
+                image: turtleEggs,
               },
             ].map((notebook, i) => (
               <div key={i} className="bg-sandstone p-6 rounded-lg">
-                <div className="text-5xl mb-4">📔</div>
+                <div className="w-full h-48 mb-4 bg-gray-200 rounded-lg overflow-hidden">
+                  <img
+                    src={notebook.image}
+                    alt={`Archive ${notebook.years}`}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
                 <h3 className="text-xl font-serif text-deep-marine mb-2">
-                  Notebook {notebook.years}
+                  Archive {notebook.years}
                 </h3>
-                <p className="text-sm text-coastal-sage mb-2">
-                  {notebook.pages} pages scanned
-                </p>
+
                 <p className="text-sm text-driftwood mb-4">{notebook.notes}</p>
-                <button className="w-full bg-deep-marine text-white py-2 rounded font-semibold hover:bg-coastal-sage transition-colors text-sm">
-                  View Scans
-                </button>
               </div>
             ))}
           </div>

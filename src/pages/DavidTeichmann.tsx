@@ -25,7 +25,7 @@ export default function DavidTeichmann() {
           }}
         />
         <div className="relative z-10 h-full flex flex-col justify-center items-center text-center px-4">
-          <h1 className="text-5xl md:text-6xl font-serif text-white mb-4">
+          <h1 className="text-5xl md:text-6xl font-serif text-coastal-sage mb-4">
             David Teichmann
           </h1>
           <p className="text-2xl text-sandstone">(1952–2021)</p>
@@ -401,35 +401,35 @@ export default function DavidTeichmann() {
               {/* Intro */}
               <div className="prose prose-lg text-driftwood leading-relaxed mb-8">
                 <p>
-                  Before the sun rises over Punta Burica, before the first turtle track carves its quiet arc in the sand, 
-                  there was always someone walking those beaches with gentle intention. Today, that someone is Vielka—a woman 
-                  whose life was forever changed by a promise, a place, and a love for the living world that cannot be measured 
-                  in hours or dollars.
+                  Before the sun rises over Punta Burica, before the first
+                  turtle track carves its quiet arc in the sand, there was
+                  always someone walking those beaches with gentle intention.
+                  Today, that someone is Vielka—a woman whose life was forever
+                  changed by a promise, a place, and a love for the living world
+                  that cannot be measured in hours or dollars.
                 </p>
-                <p className="mt-4">
-                  But her story does not begin in Panama.
-                </p>
+                <p className="mt-4">But her story does not begin in Panama.</p>
               </div>
 
               {/* Images Grid */}
               <div className="grid md:grid-cols-3 gap-6 my-12">
                 <div className="aspect-square bg-coastal-sage/20 rounded-lg overflow-hidden">
-                  <img 
-                    src={VielkaImg} 
+                  <img
+                    src={VielkaImg}
                     alt="Vielka Teichmann"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="aspect-square bg-coastal-sage/20 rounded-lg overflow-hidden">
-                  <img 
-                    src={Stone1} 
+                  <img
+                    src={Stone1}
                     alt="Vielka's mandala stones"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="aspect-square bg-coastal-sage/20 rounded-lg overflow-hidden">
-                  <img 
-                    src={Stone2} 
+                  <img
+                    src={Stone2}
                     alt="Mandala stone art"
                     className="w-full h-full object-cover"
                   />
@@ -438,89 +438,124 @@ export default function DavidTeichmann() {
 
               {/* The Journey */}
               <div className="mb-8">
-                <h3 className="text-2xl font-serif text-deep-marine mb-4">🌺 The Journey David Began</h3>
+                <h3 className="text-2xl font-serif text-deep-marine mb-4">
+                  🌺 The Journey David Began
+                </h3>
                 <div className="prose prose-lg text-driftwood leading-relaxed">
                   <p>
-                    Years ago, when David set out to share the mission of Tigre Salvaje with the world, he brought Vielka with him 
-                    on one of his journeys. Together, they visited St. John, a place whose mountains, turquoise waters, and quiet 
-                    strength mirrored the wild soul of Punta Burica.
+                    Years ago, when David set out to share the mission of Tigre
+                    Salvaje with the world, he brought Vielka with him on one of
+                    his journeys. Together, they visited St. John, a place whose
+                    mountains, turquoise waters, and quiet strength mirrored the
+                    wild soul of Punta Burica.
                   </p>
                   <p className="mt-4">
-                    For Vielka, it felt like destiny—in the shape of a small island. For David, it was a way to show her where 
-                    Tigre Salvaje could grow. For both, it became a part of their shared story.
+                    For Vielka, it felt like destiny—in the shape of a small
+                    island. For David, it was a way to show her where Tigre
+                    Salvaje could grow. For both, it became a part of their
+                    shared story.
                   </p>
                   <p className="mt-4">
-                    After David's passing, it was St. John that offered her a second home, a sanctuary where she could rebuild, 
-                    gather strength, and continue the work he dedicated his life to. Today, she lives in St. John—but her heart is 
-                    tethered to the beaches of Panama, to the very place where so many hatchlings fought their way toward the sea.
+                    After David's passing, it was St. John that offered her a
+                    second home, a sanctuary where she could rebuild, gather
+                    strength, and continue the work he dedicated his life to.
+                    Today, she lives in St. John—but her heart is tethered to
+                    the beaches of Panama, to the very place where so many
+                    hatchlings fought their way toward the sea.
                   </p>
                 </div>
               </div>
 
               {/* Carrying the Legacy */}
               <div className="mb-8 bg-white p-8 rounded-lg">
-                <h3 className="text-2xl font-serif text-deep-marine mb-4">🌙 Carrying the Legacy Alone</h3>
+                <h3 className="text-2xl font-serif text-deep-marine mb-4">
+                  🌙 Carrying the Legacy Alone
+                </h3>
                 <div className="prose prose-lg text-driftwood leading-relaxed">
                   <p>
-                    When David died, the project he protected for 16 years didn't pause. The tide didn't wait. The eggs didn't wait. 
+                    When David died, the project he protected for 16 years
+                    didn't pause. The tide didn't wait. The eggs didn't wait.
                     Nature never waits.
                   </p>
                   <p className="mt-4">
-                    And so Vielka stepped forward, alone but unwavering. With no funding, no legal structure, no guaranteed help, 
-                    she used her own savings, her own hands, her own time to keep Tigre Salvaje alive.
+                    And so Vielka stepped forward, alone but unwavering. With no
+                    funding, no legal structure, no guaranteed help, she used
+                    her own savings, her own hands, her own time to keep Tigre
+                    Salvaje alive.
                   </p>
                   <p className="mt-4">
-                    Fuel for patrols. Repairs for the sanctuary. Food for volunteers. Care for injured animals. Travel between 
-                    St. John and Panama.
+                    Fuel for patrols. Repairs for the sanctuary. Food for
+                    volunteers. Care for injured animals. Travel between St.
+                    John and Panama.
                   </p>
                   <p className="mt-4 font-semibold text-sunset-coral">
-                    Everything she does, she funds from her own pocket. Not out of obligation—but out of love.
+                    Everything she does, she funds from her own pocket. Not out
+                    of obligation—but out of love.
                   </p>
                 </div>
               </div>
 
               {/* Mandala Stones */}
               <div className="mb-8">
-                <h3 className="text-2xl font-serif text-deep-marine mb-4">🎨 The Mandala Stones</h3>
+                <h3 className="text-2xl font-serif text-deep-marine mb-4">
+                  🎨 The Mandala Stones
+                </h3>
                 <div className="prose prose-lg text-driftwood leading-relaxed">
-                  <p className="font-semibold text-lg mb-4">Small stones, infinite meaning.</p>
+                  <p className="font-semibold text-lg mb-4">
+                    Small stones, infinite meaning.
+                  </p>
                   <p>
-                    In moments of stillness, Vielka began creating art as a way to survive grief and fuel the mission. She collected 
-                    stones—drifted by the sea, washed smooth by nature—and transformed them into vibrant mandala rocks.
+                    In moments of stillness, Vielka began creating art as a way
+                    to survive grief and fuel the mission. She collected
+                    stones—drifted by the sea, washed smooth by nature—and
+                    transformed them into vibrant mandala rocks.
                   </p>
                   <p className="mt-4">
-                    Each one is painted with meditative patterns and colors inspired by both islands— Punta Burica's deep greens, 
-                    St. John's warm sunrises, Ocean blues that connect them.
+                    Each one is painted with meditative patterns and colors
+                    inspired by both islands— Punta Burica's deep greens, St.
+                    John's warm sunrises, Ocean blues that connect them.
                   </p>
                   <p className="mt-4">
-                    She calls them <span className="italic">"pieces of love and light."</span> And that's exactly what they are.
+                    She calls them{' '}
+                    <span className="italic">"pieces of love and light."</span>{' '}
+                    And that's exactly what they are.
                   </p>
                   <p className="mt-4 font-semibold text-hatchling-olive">
-                    The proceeds from every stone she sells at a small shop in St. John go straight to the conservation efforts—helping 
-                    fund beach patrols, nest protection, and the quiet work that rarely gets seen but always makes a difference.
+                    The proceeds from every stone she sells at a small shop in
+                    St. John go straight to the conservation efforts—helping
+                    fund beach patrols, nest protection, and the quiet work that
+                    rarely gets seen but always makes a difference.
                   </p>
                 </div>
               </div>
 
               {/* More Than a Caretaker */}
               <div className="bg-deep-marine/5 p-8 rounded-lg">
-                <h3 className="text-2xl font-serif text-deep-marine mb-4">🌺 More Than a Caretaker</h3>
+                <h3 className="text-2xl font-serif text-deep-marine mb-4">
+                  🌺 More Than a Caretaker
+                </h3>
                 <div className="prose prose-lg text-driftwood leading-relaxed">
                   <p>
-                    Vielka is not simply maintaining a project. She is protecting a promise.
+                    Vielka is not simply maintaining a project. She is
+                    protecting a promise.
                   </p>
                   <p className="mt-4">
-                    A promise made to David. A promise made to every hatchling. A promise made to every child who deserves to know 
-                    sea turtles still exist.
+                    A promise made to David. A promise made to every hatchling.
+                    A promise made to every child who deserves to know sea
+                    turtles still exist.
                   </p>
                   <p className="mt-4">
-                    She walks the beaches of Panama now in David's footsteps—but she does so with her own strength, her own spirit, 
-                    her own vision. She carries his legacy, but she also carries something uniquely hers: a devotion that is both 
-                    fierce and gentle, like the sea itself.
+                    She walks the beaches of Panama now in David's footsteps—but
+                    she does so with her own strength, her own spirit, her own
+                    vision. She carries his legacy, but she also carries
+                    something uniquely hers: a devotion that is both fierce and
+                    gentle, like the sea itself.
                   </p>
                   <p className="mt-4 font-semibold text-sunset-coral text-lg">
-                    Tigre Salvaje is alive today because she refuses to let it become a memory. Every patrol. Every rescued nest. 
-                    Every mandala stone. Every breath of effort is her offering to the legacy she now protects.
+                    Tigre Salvaje is alive today because she refuses to let it
+                    become a memory. Every patrol. Every rescued nest. Every
+                    mandala stone. Every breath of effort is her offering to the
+                    legacy she now protects.
                   </p>
                   <p className="mt-4 text-center italic text-xl">
                     And through her hands, the light continues.

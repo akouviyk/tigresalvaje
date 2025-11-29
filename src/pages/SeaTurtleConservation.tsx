@@ -25,15 +25,17 @@ export default function SeaTurtleConservation() {
       <section
         className="py-20"
         style={{
-          backgroundImage:
-            'linear-gradient(to bottom, rgba(10, 44, 58, 0.5), rgba(10, 44, 58, 0.5))',
+          backgroundColor: '#d4e8cf',
         }}
       >
         <div className="section-container">
-          <h1 className="text-4xl md:text-6xl font-serif text-center text-white mb-6">
+          <h1
+            className="text-4xl md:text-6xl font-serif text-center mb-6"
+            style={{ color: '#666' }}
+          >
             Sea Turtle Conservation at Punta Burica
           </h1>
-          <p className="text-xl text-sandstone text-center max-w-4xl mx-auto">
+          <p className="text-xl text-primary text-center max-w-4xl mx-auto">
             The Pacific coast of Panama hosts three critically endangered sea
             turtle species. At Tigre Salvaje, we protect their nests during the
             July–December nesting season through beach patrols,
@@ -56,13 +58,13 @@ export default function SeaTurtleConservation() {
                 <h3 className="text-3xl font-serif text-deep-marine mb-4">
                   Olive Ridley Sea Turtle
                 </h3>
-                <p className="text-sm italic text-coastal-sage mb-4">
+                <p className="text-sm italic text-muted mb-4">
                   Lepidochelys olivacea
                 </p>
 
                 <div className="grid grid-cols-2 gap-4 mb-6">
                   <div className="bg-sandstone p-4 rounded">
-                    <div className="text-sm text-coastal-sage">
+                    <div className="text-sm text-muted">
                       Conservation Status
                     </div>
                     <div className="font-semibold text-driftwood">
@@ -70,23 +72,17 @@ export default function SeaTurtleConservation() {
                     </div>
                   </div>
                   <div className="bg-sandstone p-4 rounded">
-                    <div className="text-sm text-coastal-sage">
-                      Nesting Season
-                    </div>
+                    <div className="text-sm text-muted">Nesting Season</div>
                     <div className="font-semibold text-driftwood">
                       July–December
                     </div>
                   </div>
                   <div className="bg-sandstone p-4 rounded">
-                    <div className="text-sm text-coastal-sage">
-                      Eggs per Nest
-                    </div>
+                    <div className="text-sm text-muted">Eggs per Nest</div>
                     <div className="font-semibold text-driftwood">80–130</div>
                   </div>
                   <div className="bg-sandstone p-4 rounded">
-                    <div className="text-sm text-coastal-sage">
-                      Incubation Period
-                    </div>
+                    <div className="text-sm text-muted">Incubation Period</div>
                     <div className="font-semibold text-driftwood">
                       45–50 days
                     </div>
@@ -153,13 +149,11 @@ export default function SeaTurtleConservation() {
                 <h3 className="text-3xl font-serif text-deep-marine mb-4">
                   Green Sea Turtle
                 </h3>
-                <p className="text-sm italic text-coastal-sage mb-4">
-                  Chelonia mydas
-                </p>
+                <p className="text-sm italic text-muted mb-4">Chelonia mydas</p>
 
                 <div className="grid grid-cols-2 gap-4 mb-6">
                   <div className="bg-sandstone p-4 rounded">
-                    <div className="text-sm text-coastal-sage">
+                    <div className="text-sm text-muted">
                       Conservation Status
                     </div>
                     <div className="font-semibold text-driftwood">
@@ -167,23 +161,17 @@ export default function SeaTurtleConservation() {
                     </div>
                   </div>
                   <div className="bg-sandstone p-4 rounded">
-                    <div className="text-sm text-coastal-sage">
-                      Nesting Season
-                    </div>
+                    <div className="text-sm text-muted">Nesting Season</div>
                     <div className="font-semibold text-driftwood">
                       August–November
                     </div>
                   </div>
                   <div className="bg-sandstone p-4 rounded">
-                    <div className="text-sm text-coastal-sage">
-                      Eggs per Nest
-                    </div>
+                    <div className="text-sm text-muted">Eggs per Nest</div>
                     <div className="font-semibold text-driftwood">90–120</div>
                   </div>
                   <div className="bg-sandstone p-4 rounded">
-                    <div className="text-sm text-coastal-sage">
-                      Incubation Period
-                    </div>
+                    <div className="text-sm text-muted">Incubation Period</div>
                     <div className="font-semibold text-driftwood">
                       50–60 days
                     </div>
@@ -233,13 +221,13 @@ export default function SeaTurtleConservation() {
                 <h3 className="text-3xl font-serif text-deep-marine mb-4">
                   Hawksbill Sea Turtle
                 </h3>
-                <p className="text-sm italic text-coastal-sage mb-4">
+                <p className="text-sm italic text-muted mb-4">
                   Eretmochelys imbricata
                 </p>
 
                 <div className="grid grid-cols-2 gap-4 mb-6">
                   <div className="bg-sandstone p-4 rounded">
-                    <div className="text-sm text-coastal-sage">
+                    <div className="text-sm text-muted">
                       Conservation Status
                     </div>
                     <div className="font-semibold text-sunset-coral">
@@ -247,23 +235,17 @@ export default function SeaTurtleConservation() {
                     </div>
                   </div>
                   <div className="bg-sandstone p-4 rounded">
-                    <div className="text-sm text-coastal-sage">
-                      Nesting Season
-                    </div>
+                    <div className="text-sm text-muted">Nesting Season</div>
                     <div className="font-semibold text-driftwood">
                       September–November
                     </div>
                   </div>
                   <div className="bg-sandstone p-4 rounded">
-                    <div className="text-sm text-coastal-sage">
-                      Eggs per Nest
-                    </div>
+                    <div className="text-sm text-muted">Eggs per Nest</div>
                     <div className="font-semibold text-driftwood">120–160</div>
                   </div>
                   <div className="bg-sandstone p-4 rounded">
-                    <div className="text-sm text-coastal-sage">
-                      Incubation Period
-                    </div>
+                    <div className="text-sm text-muted">Incubation Period</div>
                     <div className="font-semibold text-driftwood">
                       55–60 days
                     </div>
@@ -392,19 +374,19 @@ export default function SeaTurtleConservation() {
               <div className="absolute left-[10%] top-1/2 -translate-y-1/2 text-center">
                 <div className="bg-white px-4 py-2 rounded shadow-lg">
                   <div className="font-bold text-deep-marine">25–26°C</div>
-                  <div className="text-sm text-coastal-sage">Males</div>
+                  <div className="text-sm text-muted">Males</div>
                 </div>
               </div>
               <div className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 text-center">
                 <div className="bg-white px-4 py-2 rounded shadow-lg">
                   <div className="font-bold text-deep-marine">27–29°C</div>
-                  <div className="text-sm text-coastal-sage">Mixed</div>
+                  <div className="text-sm text-muted">Mixed</div>
                 </div>
               </div>
               <div className="absolute right-[10%] top-1/2 -translate-y-1/2 text-center">
                 <div className="bg-white px-4 py-2 rounded shadow-lg">
                   <div className="font-bold text-deep-marine">30–32°C</div>
-                  <div className="text-sm text-coastal-sage">Females</div>
+                  <div className="text-sm text-muted">Females</div>
                 </div>
               </div>
             </div>
@@ -419,7 +401,7 @@ export default function SeaTurtleConservation() {
                 mate with multiple females, but without females, there are no
                 nests.
               </p>
-              <p className="text-sm text-coastal-sage italic">
+              <p className="text-sm text-muted italic">
                 Note: We maintain natural temperature variation to ensure
                 genetic diversity and produce some males.
               </p>
