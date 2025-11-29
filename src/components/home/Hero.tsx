@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import tigreImage from '../../assets/tigresalvajeconservation.webp';
 
 export default function Hero() {
   return (
@@ -9,10 +10,7 @@ export default function Hero() {
         style={{ backgroundColor: '#fffaf1' }}
       >
         <div className="max-w-2xl">
-          <h1
-            className="text-3xl md:text-5xl lg:text-6xl font-serif mb-6 leading-tight text-coastal-sage"
-            // style={{ color: '#17401b' }}
-          >
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-serif mb-6 leading-tight text-coastal-sage">
             Keep Tigre Salvaje Alive — Protecting Turtles & Wildlife at Punta
             Burica
           </h1>
@@ -66,7 +64,7 @@ export default function Hero() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: 'url("/src/assets/tigresalvajeconservation.webp")',
+            backgroundImage: `url(${tigreImage})`,
           }}
         />
         <div
